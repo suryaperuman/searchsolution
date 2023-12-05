@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/primary</item>
+<!--        <item name="colorPrimaryContainer">#D6E3FF</item>-->
+<!--        <item name="colorOnPrimaryContainer">#001B3D</item>-->
+<!--        <item name="colorPrimaryFixed">#D6E3FF</item>-->
+<!--        <item name="colorOnPrimaryFixed">#001B3D</item>-->
+<!--        <item name="colorPrimaryFixedDim">#A8C8FF</item>-->
+<!--        <item name="colorOnPrimaryFixedVariant">#00468A</item>-->
+
+
+<!--        <item name="colorSecondary">#555F71</item>-->
+<!--        <item name="colorOnSecondary">#FFFFFF</item>-->
+<!--        <item name="colorSecondaryContainer">#D9E3F8</item>-->
+<!--        <item name="colorOnSecondaryContainer">#121C2B</item>-->
+<!--        <item name="colorSecondaryFixed">#D9E3F8</item>-->
+<!--        <item name="colorOnSecondaryFixed">#121C2B</item>-->
+<!--        <item name="colorSecondaryFixedDim">#BDC7DC</item>-->
+<!--        <item name="colorOnSecondaryFixedVariant">#3E4758</item>-->
+
+
+<!--        <item name="colorTertiary">#6F5675</item>-->
+<!--        <item name="colorOnTertiary">#FFFFFF</item>-->
+<!--        <item name="colorTertiaryContainer">#F9D8FE</item>-->
+<!--        <item name="colorOnTertiaryContainer">#28132F</item>-->
+<!--        <item name="colorTertiaryFixed">#F9D8FE</item>-->
+<!--        <item name="colorOnTertiaryFixed">#28132F</item>-->
+<!--        <item name="colorTertiaryFixedDim">#DCBCE1</item>-->
+<!--        <item name="colorOnTertiaryFixedVariant">#563E5C</item>-->
+
+
+<!--        <item name="colorError">#BA1A1A</item>-->
+<!--        <item name="colorOnError">#FFFFFF</item>-->
+<!--        <item name="colorErrorContainer">#FFDAD6</item>-->
+<!--        <item name="colorOnErrorContainer">#410002</item>-->
+
+
+<!--        <item name="background">#FDFBFF</item>-->
+<!--        <item name="colorOnBackground">#1A1B1E</item>-->
+<!--        <item name="colorSurface">#FAF9FD</item>-->
+<!--        <item name="colorOnSurface">#1A1B1E</item>-->
+<!--        <item name="colorSurfaceVariant">#E0E2EC</item>-->
+<!--        <item name="colorOnSurfaceVariant">#43474E</item>-->
+<!--        <item name="colorSurfaceInverse">#2F3033</item>-->
+<!--        <item name="colorOnSurfaceInverse">#F1F0F4</item>-->
+
+
+<!--        <item name="colorPrimaryInverse">#A8C8FF</item>-->
+<!--&lt;!&ndash;        <item name="colorSurfaceTint">#265EA7</item>&ndash;&gt;-->
+<!--        <item name="colorOutline">#74777F</item>-->
+<!--        <item name="colorOutlineVariant">#C4C6CF</item>-->
+<!--        <item name="colorSurfaceContainerHighest">#E3E2E6</item>-->
+<!--        <item name="colorSurfaceContainerHigh">#E9E7EB</item>-->
+<!--        <item name="colorSurfaceContainer">#EEEDF1</item>-->
+<!--        <item name="colorSurfaceContainerLow">#F4F3F7</item>-->
+<!--        <item name="colorSurfaceContainerLowest">#FFFFFF</item>-->
+<!--        <item name="colorSurfaceBright">#FAF9FD</item>-->
+<!--        <item name="colorSurfaceDim">#DAD9DD</item>-->
+    </style>
+
+    <style name="SlideActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+    </style>
+</resources>

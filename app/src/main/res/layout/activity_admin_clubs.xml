@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivityClubs">
+
+
+    <View
+        android:id="@+id/AdminEventTypesHeader"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/event_types"
+        android:textColor="@color/onPrimary"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/AdminEventTypesHeader" />
+
+    <ListView
+        android:id="@+id/listClubOwnerEventMembersView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addEventTypeBtn" />
+
+    <EditText
+        android:id="@+id/editTextEventTypeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_corners"
+        android:hint="@string/event_name"
+        android:importantForAutofill="no"
+        android:inputType="text|textNoSuggestions"
+        android:padding="12dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AdminEventTypesHeader"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/editTextEventTypeDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints="username"
+        android:background="@drawable/round_corners"
+        android:gravity="start|top"
+        android:hint="Event Description"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextEventTypeName"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <LinearLayout
+        android:id="@+id/setPace"
+        android:layout_width="179dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@id/Level"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextEventTypeDesc">
+
+        <TextView
+            android:id="@+id/Pace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:text="@string/pace"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextMinPace"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:hint="@string/min"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/Range"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:text="@string/dashRange"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextPaceMax"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:hint="@string/max"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/SetAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/setPace"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEventTypeDesc"></LinearLayout>
+
+    <TextView
+        android:id="@+id/Level"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/level"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/spinnerLevel"
+        app:layout_constraintStart_toEndOf="@id/setPace"
+        app:layout_constraintTop_toBottomOf="@id/editTextEventTypeDesc" />
+
+    <Spinner
+        android:id="@+id/spinnerLevel"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Level"
+        app:layout_constraintTop_toBottomOf="@id/editTextEventTypeDesc" />
+
+    <LinearLayout
+        android:id="@+id/SetAge"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setPace">
+
+        <TextView
+            android:id="@+id/Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:text="@string/age"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="9sp"
+            android:hint="@string/min"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addEventTypeBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_bg"
+        android:padding="12dp"
+        android:text="@string/add_event"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SetAge"
+        tools:ignore="VisualLintButtonSize" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/nav_background"
+        android:elevation="2dp"
+        app:itemIconSize="36dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

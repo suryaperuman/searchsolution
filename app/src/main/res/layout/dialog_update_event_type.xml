@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextAdminChangeEventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_corners"
+        android:drawablePadding="16dp"
+        android:hint="New name"
+        android:inputType="text|textNoSuggestions"
+        android:padding="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextAdminChangeDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_corners"
+        android:drawablePadding="16dp"
+        android:hint="New description"
+        android:inputType="text|textNoSuggestions"
+        android:padding="10dp"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextAdminChangeMinPace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corners"
+            android:drawablePadding="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Min pace"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextAdminChangeMaxPace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corners"
+            android:layout_marginStart="8dp"
+            android:drawablePadding="16dp"
+            android:hint="Max pace"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+        <EditText
+            android:id="@+id/editTextAdminChangeAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corners"
+            android:layout_marginEnd="8dp"
+            android:drawablePadding="16dp"
+            android:hint="Age"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinnerAdminChangeEventLevel"
+            android:layout_marginStart="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/round_corners"/>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerAdminChangeStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="@drawable/round_corners"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonUpdateAdminEventType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            android:background="@drawable/round_bg"
+            android:padding="10dp"
+            android:text="Update"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/primary" />
+
+        <Button
+            android:id="@+id/buttonDeleteAdminEventType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            android:background="@drawable/round_bg"
+            android:padding="10dp"
+            android:text="Delete"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/primary" />
+    </LinearLayout>
+</LinearLayout>

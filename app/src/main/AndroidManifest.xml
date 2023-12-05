@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GCC"
+        tools:targetApi="31">
+        <activity
+            android:name=".UserSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserHomeActivity"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".ClubOwnerActivitySettings"
+            android:exported="false" />
+        <activity
+            android:name=".ClubOwnerActivityEvents"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClubOwnerEventsParticipants"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivityUsers"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivityClubs"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivitySettings"
+            android:exported="false" />
+        <activity
+            android:name=".clubOwnerMainMenu"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

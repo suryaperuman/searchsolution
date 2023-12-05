@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">GCC</string>
+    <string name="appAcronym">GCC</string>
+    <string name="appName">Grimpeurs Cycling Club</string>
+    <string name="loginBtn">LOGIN</string>
+    <string name="registerBtn">Register</string>
+    <string name="usernameTag">Username:</string>
+    <string name="PasswordTag">Password:</string>
+    <string name="usernameHint">Username</string>
+    <string name="passwordHint">Password</string>
+
+
+    <string name="roleUser">Participant</string>
+    <string name="roleOwner">Club owner</string>
+    <string name="signUpQuestion">Don\'t have an account?</string>
+    <string name="signUpLink">Sign up</string>
+    <string name="signInQuestion">Already have an account?</string>
+    <string name="signInLink">Sign In</string>
+    <string name="name">name</string>
+    <string name="role">role</string>
+
+    <string name="passwordRequirements">
+        Password Must include: \n
+        One letter. \n
+        One digit. \n
+        One special character (@, #, $, %, ^, &amp;, +, or =). \n
+        Minimum length of 8 characters.
+    </string>
+    <string name="adminText">Admin View</string>
+    <string name="newUserDesc">"Enter a \nUsername,\nPassword "</string>
+    <string name="adminUsers">Users:</string>
+    <string name="stringAdd">Add</string>
+    <string name="addEventType">Add EventType</string>
+    <string name="toEvents_btn">To Events</string>
+    <string name="logout_btn">Logout</string>
+    <string name="adduser_btn">Add</string>
+    <string name="deleteuserbtn">Delete</string>
+    <string name="event_name">Event Name</string>
+    <string name="event_types">Event Types</string>
+    <string name="add_event">Add Event</string>
+    <string name="age">Age:</string>
+    <string name="level">Level:</string>
+    <string name="pace">Pace:</string>
+    <string name="dashRange">-</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="clubOwnersettingsBtn">Change Settings</string>
+    <string name="usersettingsbtn">Change Settings</string>
+</resources>

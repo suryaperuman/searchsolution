@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextAdminChangeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="username"
+        android:background="@drawable/round_corners"
+        android:drawablePadding="16dp"
+        android:hint="New Username"
+        android:inputType="text|textNoSuggestions"
+        android:padding="16dp"
+        android:textSize="28sp"
+        app:drawableStartCompat="@drawable/ic_user" />
+
+    <EditText
+        android:id="@+id/editTextAdminChangeDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_corners"
+        android:drawablePadding="16dp"
+        android:hint="New Password"
+        android:inputType="text|textNoSuggestions"
+        android:padding="16dp"
+        android:textSize="28sp"
+        app:drawableStartCompat="@drawable/ic_lock"
+        android:autofillHints="username" />
+
+
+    <Spinner
+        android:id="@+id/spinnerUpdateRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonUpdateAdminEventType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/round_bg"
+            android:padding="8dp"
+            android:text="UPDATE"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            app:backgroundTint="@color/primary" />
+
+        <Button
+            android:id="@+id/buttonDeleteAdminEventType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/round_bg"
+            android:padding="8dp"
+            android:text="DELETE"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            app:backgroundTint="@color/primary" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

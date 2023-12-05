@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "151674359473",
+    "firebase_url": "https://the-grimpeurs-cycling-club-default-rtdb.firebaseio.com",
+    "project_id": "the-grimpeurs-cycling-club",
+    "storage_bucket": "the-grimpeurs-cycling-club.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151674359473:android:d7a186df6ac83a4b3b5c90",
+        "android_client_info": {
+          "package_name": "com.example.gcc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA_h_0o90QOz2TwxVTVcsfaqdaoH4U1NY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
